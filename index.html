@@ -258,9 +258,6 @@
                 const game = docSnap.data();
                 if (game) {
                     setGameState(game);
-                    if (currentRoom && currentRoom.status === 'playing') {
-                        setScreen('game');
-                    }
                 }
             }, (err) => {
                 console.error("Game Snapshot Error:", err);
